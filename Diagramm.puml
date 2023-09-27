@@ -1,0 +1,132 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class animal {
+name: String;
+homeAnimals: List<HomeAnimal>;
+packlAnimals: List<PackAnimsl>;
+getName(): String;
+setName(String): void;
+addHomeAnimal(HomeAnimal): void;
+addPackAnimsl(PackAnimsl): void;
+removeHomeAnimal(HomeAnimal): void
+removePackAnimsl(PackAnimsl): void
+}
+class HomeAnimal extends animal{
+name: String;
+cats: List<Cat>;
+dogs: List<Dog>;
+hamsters: List<Hamster>
+getName(): String;
+setName(String): void;
+addCat(Cat): void;
+addDog(Dog): void;
+addHamster(Hamster): void;
+removeCat(Cat): void;
+removeDog(Dog): void;
+removeHamster(Hamster): void;
+}
+
+class PackAnimal extends animal{
+name: String;
+horse: List<Horse>;
+camel: List<Camel>;
+mule: List<Mule>
+getName(): String;
+setName(String): void;
+addHorse(Horse): void;
+addCamel(Camel): void;
+addMule(Mule): void;
+removeHorse(Horse): void;
+removeCamel(Camel): void;
+removeMule(Mule): void;
+}
+
+class Cat extends HomeAnimal{
+name: String;
+dateBirth: DataTime;
+commands: String;
+color: String;
+getName(): String;
+getDateBirth(): DataTime;
+getCommands(): String;
+getColor(): String
+setName(String): void;
+setDateBirth(DataTime): void;
+setCommands(String): void;
+setColor(String): void;
+}
+class Dog extends HomeAnimal{
+name: String;
+dateBirth: DataTime;
+commands: String;
+color: String;
+getName(): String;
+getDateBirth(): DataTime;
+getCommands(): String;
+getColor(): String
+setName(String): void;
+setDateBirth(DataTime): void;
+setCommands(String): void;
+setColor(String): void;
+}
+class Hamster extends HomeAnimal{
+name: String;
+dateBirth: DataTime;
+commands: String;
+color: String;
+getName(): String;
+getDateBirth(): DataTime;
+getCommands(): String;
+getColor(): String
+setName(String): void;
+setDateBirth(DataTime): void;
+setCommands(String): void;
+setColor(String): void;
+}
+
+class Camel extends PackAnimal{
+name: String;
+dateBirth: DataTime;
+commands: String;
+color: String;
+getName(): String;
+getDateBirth(): DataTime;
+getCommands(): String;
+getColor(): String
+setName(String): void;
+setDateBirth(DataTime): void;
+setCommands(String): void;
+setColor(String): void;
+}
+class Horse extends PackAnimal{
+name: String;
+dateBirth: DataTime;
+commands: String;
+color: String;
+getName(): String;
+getDateBirth(): DataTime;
+getCommands(): String;
+getColor(): String
+setName(String): void;
+setDateBirth(DataTime): void;
+setCommands(String): void;
+setColor(String): void;
+}
+class Mule extends PackAnimal{
+name: String;
+dateBirth: DataTime;
+commands: String;
+color: String;
+getName(): String;
+getDateBirth(): DataTime;
+getCommands(): String;
+getColor(): String
+setName(String): void;
+setDateBirth(DataTime): void;
+setCommands(String): void;
+setColor(String): void;
+}
+
+
+@enduml
